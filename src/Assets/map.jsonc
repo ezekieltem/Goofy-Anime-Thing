@@ -1,0 +1,463 @@
+{
+    "Gif": [
+        {
+            "id": "shy1",
+            "path": "/Gif/anime-girl_1.gif",
+            "tags": [
+                "shy"
+            ]
+        }
+    ],
+    "Img": [],
+    "Titles": [
+        {
+            "value": "T-Totally Not M-Mal...ware...",
+            "tags": [
+                "shy",
+                "flustered"
+            ]
+        },
+        {
+            "value": "N-NO! I-I'M NOT M-MALWARE!!! ...b-baka...",
+            "tags": [
+                "tsundere",
+                "flustered"
+            ]
+        },
+        {
+            "value": "W-Welcome to the C-Cauldron Club...",
+            "tags": [
+                "shy",
+                "whimsical"
+            ]
+        },
+        {
+            "value": "Y-You clicked it, s-so now we're doing this.",
+            "tags": [
+                "deadpan",
+                "teasing"
+            ]
+        }
+    ],
+    "MsgStages": {
+        "Intro": [
+            {
+                "Lines": [
+                    "H-Hi t-there...",
+                    "W-Would you be willing to help me fill out a completely fake magic form...?",
+                    {
+                        "Text": "...t-this is so embarrassing...",
+                        "Size": {
+                            "Value": 10,
+                            "type": "px"
+                        },
+                        "Italics": true
+                    },
+                    [
+                        "I-I only need your ",
+                        {
+                            "Text": "totally made-up",
+                            "color": "#ff9fcf",
+                            "Bold": true
+                        },
+                        " wizard details..."
+                    ],
+                    "P-Please..?"
+                ],
+                "Tags": [
+                    "shy",
+                    "flustered"
+                ],
+                "Button": "O-Okay..."
+            },
+            {
+                "Lines": [
+                    "W-Welcome, traveler...",
+                    "The Cauldron Registry needs a few silly answers.",
+                    [
+                        "Nothing here is real. ",
+                        {
+                            "Text": "Absolutely nothing.",
+                            "Underlined": true
+                        }
+                    ],
+                    "Still want to indulge the bit?"
+                ],
+                "Tags": [
+                    "shy",
+                    "whimsical"
+                ],
+                "Button": "For the bit."
+            },
+            {
+                "Lines": [
+                    "Hmph.",
+                    "Since you're already here, answer my ridiculous anime questionnaire.",
+                    {
+                        "Text": "D-Don't get the wrong idea.",
+                        "Bold": true,
+                        "color": "#ffb3b3"
+                    }
+                ],
+                "Tags": [
+                    "tsundere",
+                    "flustered"
+                ],
+                "Button": "Fine, whatever."
+            },
+            {
+                "Lines": [
+                    "You opened the app.",
+                    "Now the app would like some dramatic nonsense in return.",
+                    [
+                        {
+                            "Text": "No consequences.",
+                            "Bold": true
+                        },
+                        " Just vibes."
+                    ]
+                ],
+                "Tags": [
+                    "deadpan",
+                    "teasing"
+                ],
+                "Button": "Proceed with nonsense."
+            }
+        ],
+        "Card": [
+            {
+                "Num": [
+                    "M-Moonbeam sigil code..."
+                ],
+                "Exp": [
+                    "N-Next eclipse date..."
+                ],
+                "Sec": [
+                    "T-The secret squeak count..."
+                ],
+                "Title": [
+                    "M-Magic Credential Form..."
+                ],
+                "SubText": [
+                    "I-It's just pretend. P-Please don't laugh..."
+                ],
+                "Back": "Actually, no.",
+                "Next": "W-What's next?",
+                "Tags": [
+                    "shy",
+                    "flustered"
+                ]
+            },
+            {
+                "Num": [
+                    "Wand resonance key"
+                ],
+                "Exp": [
+                    "Potion freshness date"
+                ],
+                "Sec": [
+                    "Tiny chaos number"
+                ],
+                "Title": [
+                    "Coven Records"
+                ],
+                "SubText": [
+                    "The registry insists on being theatrical."
+                ],
+                "Back": "Retreat",
+                "Next": "Continue the ritual",
+                "Tags": [
+                    "shy",
+                    "whimsical"
+                ]
+            },
+            {
+                "Num": [
+                    "Heroic sparkle license"
+                ],
+                "Exp": [
+                    "Expiration of your patience"
+                ],
+                "Sec": [
+                    "Back-of-card-or-whatever"
+                ],
+                "Title": [
+                    "S-Stop staring at the fake form!"
+                ],
+                "SubText": [
+                    "I-It isn't even a real portal, baka..."
+                ],
+                "Back": "Forget it.",
+                "Next": "Tch. Continue.",
+                "Tags": [
+                    "tsundere",
+                    "flustered"
+                ]
+            },
+            {
+                "Num": [
+                    "First absurd code"
+                ],
+                "Exp": [
+                    "Best by next full moon"
+                ],
+                "Sec": [
+                    "How many goblins?"
+                ],
+                "Title": [
+                    "Administrative Nonsense"
+                ],
+                "SubText": [
+                    "A form only exists because a joke without boxes feels unfinished."
+                ],
+                "Back": "No thanks.",
+                "Next": "Advance the bit.",
+                "Tags": [
+                    "deadpan",
+                    "teasing"
+                ]
+            }
+        ],
+        "NameAdd": [
+            {
+                "Title": [
+                    "B-Billing... I mean, uh... wizard details..."
+                ],
+                "SubText": [
+                    "S-Something like a mailing label, but make it magical..."
+                ],
+                "Name": [
+                    "N-Name of the spellcaster..."
+                ],
+                "Address": [
+                    "W-Where your cauldron lives...?"
+                ],
+                "Town": [
+                    "...t-town..."
+                ],
+                "State": [
+                    "S-State? R-Region?"
+                ],
+                "Zip": [
+                    "M-Magical zip thing..."
+                ],
+                "Country": [
+                    "C-Country..."
+                ],
+                "Phone": [
+                    "Owl post line?"
+                ],
+                "Email": [
+                    "Hexmail address..."
+                ],
+                "Back": "Actually, no.",
+                "Next": "Is that all?",
+                "Tags": [
+                    "shy",
+                    "flustered"
+                ]
+            },
+            {
+                "Title": [
+                    "Coven Residence"
+                ],
+                "SubText": [
+                    "Purely decorative geography for this deeply unserious ritual."
+                ],
+                "Name": [
+                    "Coven member name"
+                ],
+                "Address": [
+                    "Cottage, tower, or swamp lane"
+                ],
+                "Town": [
+                    "Town / village"
+                ],
+                "State": [
+                    "Region"
+                ],
+                "Zip": [
+                    "Postal rune"
+                ],
+                "Country": [
+                    "Realm"
+                ],
+                "Phone": [
+                    "Speaking crystal number"
+                ],
+                "Email": [
+                    "Mailed-by-bat address"
+                ],
+                "Back": "Go back",
+                "Next": "Finish the form",
+                "Tags": [
+                    "shy",
+                    "whimsical"
+                ]
+            },
+            {
+                "Title": [
+                    "Tch. More fake details."
+                ],
+                "SubText": [
+                    "I can't believe you kept going."
+                ],
+                "Name": [
+                    "Alias of the suspicious protagonist"
+                ],
+                "Address": [
+                    "Your definitely-not-secret lair"
+                ],
+                "Town": [
+                    "Town, I guess"
+                ],
+                "State": [
+                    "Region or whatever"
+                ],
+                "Zip": [
+                    "Postal thingy"
+                ],
+                "Country": [
+                    "Country"
+                ],
+                "Phone": [
+                    "Phone, baka"
+                ],
+                "Email": [
+                    "Email. Obviously."
+                ],
+                "Back": "Never mind.",
+                "Next": "Hurry up.",
+                "Tags": [
+                    "tsundere",
+                    "flustered"
+                ]
+            },
+            {
+                "Title": [
+                    "Final Administrative Layer"
+                ],
+                "SubText": [
+                    "The joke now requires a mailing profile for your imaginary anime paperwork."
+                ],
+                "Name": [
+                    "Name for the archives"
+                ],
+                "Address": [
+                    "Dramatic street address"
+                ],
+                "Town": [
+                    "Town"
+                ],
+                "State": [
+                    "State / region"
+                ],
+                "Zip": [
+                    "Postal code"
+                ],
+                "Country": [
+                    "Country / realm"
+                ],
+                "Phone": [
+                    "Phone line"
+                ],
+                "Email": [
+                    "Email portal"
+                ],
+                "Back": "Return",
+                "Next": "Conclude nonsense",
+                "Tags": [
+                    "deadpan",
+                    "teasing"
+                ]
+            }
+        ],
+        "Final": [
+            {
+                "Lines": [
+                    "Y-You... r-really m-made it to the end..?",
+                    "",
+                    "I-It's just a fake anime questionnaire...",
+                    {
+                        "Text": "B-But thank you anyway...",
+                        "Italics": true,
+                        "color": "#ffd4ea"
+                    }
+                ],
+                "ForceClose": {
+                    "Do": true,
+                    "Time": 2200
+                },
+                "Tags": [
+                    "shy",
+                    "flustered"
+                ]
+            },
+            {
+                "Lines": [
+                    "The ritual is complete.",
+                    "",
+                    {
+                        "Text": "Your imaginary paperwork has been accepted.",
+                        "Bold": true,
+                        "color": "#b8f5d1"
+                    },
+                    "A bat will not be following up."
+                ],
+                "ForceClose": {
+                    "Do": true,
+                    "Time": 2400
+                },
+                "Tags": [
+                    "shy",
+                    "whimsical"
+                ]
+            },
+            {
+                "Lines": [
+                    "W-Wow.",
+                    "You really let a fictional 2D anime girl boss you through three whole pages.",
+                    "",
+                    {
+                        "Text": "That's kind of incredible, actually.",
+                        "Bold": true,
+                        "Underlined": true
+                    },
+                    "D-Don't expect me to say thanks."
+                ],
+                "ForceClose": {
+                    "Do": true,
+                    "Time": 3200
+                },
+                "Tags": [
+                    "tsundere",
+                    "teasing"
+                ]
+            },
+            {
+                "Lines": [
+                    "End of form.",
+                    "",
+                    "No data was needed.",
+                    "No secrets were wanted.",
+                    {
+                        "Text": "You simply committed to the bit.",
+                        "Size": {
+                            "Value": 22,
+                            "type": "px"
+                        },
+                        "Bold": true
+                    }
+                ],
+                "ForceClose": {
+                    "Do": true,
+                    "Time": 2500
+                },
+                "Tags": [
+                    "deadpan",
+                    "teasing"
+                ]
+            }
+        ]
+    }
+}

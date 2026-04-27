@@ -17,9 +17,76 @@
   <div id="adorne">
     <img id="anime">
     <div id="content">
-      <div id="msg"></div>
-      <div class="txtInt" id="cardNum">
-        <div class=""></div>
+      <div id="Transition" state="0"></div>
+      <div id="intro">
+        <div id="in-msg">
+        </div>
+        <section id="in-btns">
+          <input type="button" id="in-yes" value="Of course!">
+        </section>
+      </div>
+      <div id="cardInfo" hidden>
+        <div class="panelTitle">Payment Details</div>
+        <div class="panelSubTitle">Y-You can trust me with this part...</div>
+        <div class="txtInt" id="cardNum">
+          <div class="txtInt-Txt" id="cardNum-Txt">Card Number</div>
+          <input type="text" class="cardNum" id="cardNum-Int" placeholder="moonbeam-sigil-7777">
+        </div>
+        <div class="txtInt" id="cardExp">
+          <div class="txtInt-Txt" id="cardExp-Txt">Card Expiration</div>
+          <input type="text" class="cardExp" id="cardExp-Int" placeholder="next eclipse">
+        </div>
+        <div class="txtInt" id="cardSec">
+          <div class="txtInt-Txt" id="cardSec-Txt">Security Code</div>
+          <input type="text" class="cardSec" id="cardSec-Int" placeholder="3 squeaks">
+        </div>
+        <section class="panelActions" id="cardActions">
+          <button type="button" class="flowBtn flowBtn-secondary" id="cardBack">Back</button>
+          <button type="button" class="flowBtn" id="cardContinue">Continue</button>
+        </section>
+      </div>
+      <div id="nameAdd" hidden>
+        <div class="panelTitle">Billing Details</div>
+        <div class="panelSubTitle">J-Just the usual address things...</div>
+        <div class="txtInt" id="billingName">
+          <div class="txtInt-Txt" id="billingName-Txt">Name on Card</div>
+          <input type="text" class="billingName" id="billingName-Int" placeholder="Winifred Sanderson">
+        </div>
+        <div class="txtInt" id="billingAddress1">
+          <div class="txtInt-Txt" id="billingAddress1-Txt">Address Line 1</div>
+          <input type="text" class="billingAddress1" id="billingAddress1-Int" placeholder="13 Cauldron Crescent">
+        </div>
+        <div class="txtInt" id="billingTown">
+          <div class="txtInt-Txt" id="billingTown-Txt">Town / City</div>
+          <input type="text" class="billingTown" id="billingTown-Int" placeholder="Salem">
+        </div>
+        <div class="txtInt" id="billingState">
+          <div class="txtInt-Txt" id="billingState-Txt">State / Region</div>
+          <input type="text" class="billingState" id="billingState-Int" placeholder="Massachusetts">
+        </div>
+        <div class="txtInt" id="billingZip">
+          <div class="txtInt-Txt" id="billingZip-Txt">ZIP / Postal Code</div>
+          <input type="text" class="billingZip" id="billingZip-Int" placeholder="01970">
+        </div>
+        <div class="txtInt" id="billingCountry">
+          <div class="txtInt-Txt" id="billingCountry-Txt">Country</div>
+          <input type="text" class="billingCountry" id="billingCountry-Int" placeholder="Hexington">
+        </div>
+        <div class="txtInt" id="billingPhone">
+          <div class="txtInt-Txt" id="billingPhone-Txt">Phone Number</div>
+          <input type="tel" class="billingPhone" id="billingPhone-Int" placeholder="owl-post line 7">
+        </div>
+        <div class="txtInt" id="billingEmail">
+          <div class="txtInt-Txt" id="billingEmail-Txt">Email Address</div>
+          <input type="email" class="billingEmail" id="billingEmail-Int" placeholder="hexmail@cauldron.invalid">
+        </div>
+        <section class="panelActions" id="billingActions">
+          <button type="button" class="flowBtn flowBtn-secondary" id="billingBack">Back</button>
+          <button type="button" class="flowBtn" id="billingContinue">Submit</button>
+        </section>
+      </div>
+      <div id="final" hidden>
+        <div id="final-msg"></div>
       </div>
     </div>
   </div>

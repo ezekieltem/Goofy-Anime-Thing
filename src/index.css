@@ -9,6 +9,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 div#adorne {
   position: absolute;
   width: 690px;
@@ -32,6 +36,7 @@ div#adorneBorder {
   border-width: 5px;
 
   z-index: 90;
+  pointer-events: none;
 }
 
 #anime {
@@ -47,8 +52,12 @@ div#adorneBorder {
 
 #content {
   position: absolute;
-  top: 0px;
-  left: 300px;
+  top: 5px;
+  left: 295px;
+  width: 390px;
+  height: 280px;
+  z-index: 1;
+  pointer-events: auto;
 }
 
 #topbar {
@@ -98,4 +107,258 @@ div#adorneBorder {
 #x:hover {
   background: #d14836;
   color: #fff;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#intro,
+#cardInfo,
+#nameAdd,
+#final {
+  width: 390px;
+  height: 280px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#in-msg {
+  position: absolute;
+  top: 5px;
+  text-align: center;
+  width: 390px;
+}
+
+#in-msg div {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+section#in-btns {
+  position: absolute;
+
+  width: 390px;
+  height: 30px;
+
+  bottom: 0px;
+  align-content: center;
+  text-align: center;
+}
+
+input[type=button] {
+  height: 30px;
+  width: 150px;
+
+  color: white;
+
+  border-radius: 15px;
+  border-color: #a1a1a1;
+  border-width: 3px;
+
+  background-color: #252525;
+}
+
+#cardInfo,
+#nameAdd {
+  box-sizing: border-box;
+  display: grid;
+  gap: 6px 8px;
+  align-content: start;
+  grid-auto-rows: min-content;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0)),
+    #171717;
+  border-radius: 10px;
+}
+
+#final {
+  box-sizing: border-box;
+  padding: 18px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background:
+    radial-gradient(circle at top, rgba(255, 156, 129, 0.14), transparent 45%),
+    #171717;
+  border-radius: 10px;
+}
+
+#final-msg {
+  width: 100%;
+}
+
+#final-msg div {
+  position: static;
+  width: auto;
+  height: auto;
+  line-height: 1.2;
+}
+
+#cardInfo {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+#nameAdd {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.panelTitle,
+.panelSubTitle {
+  grid-column: 1 / -1;
+}
+
+.panelTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #f2f2f2;
+  line-height: 1.1;
+  margin-top: 0px;
+}
+
+.panelSubTitle {
+  margin-top: -2px;
+  margin-bottom: 1px;
+  font-size: 11px;
+  color: #b7b7b7;
+  line-height: 1.1;
+}
+
+.txtInt {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.txtInt-Txt {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #cbcbcb;
+  line-height: 1.1;
+}
+
+.txtInt input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 28px;
+  padding: 0 8px;
+  border: 1px solid #5c5c5c;
+  border-radius: 7px;
+  background: #262626;
+  color: #fff;
+  outline: none;
+  font-size: 13px;
+  min-width: 0;
+}
+
+.txtInt input::placeholder {
+  color: #898989;
+}
+
+.txtInt input:focus {
+  border-color: #cf7d68;
+  box-shadow: 0 0 0 2px rgba(207, 125, 104, 0.2);
+}
+
+#cardNum,
+#billingName {
+  grid-column: 1 / -1;
+}
+
+#cardExp,
+#cardSec,
+#billingAddress1,
+#billingTown,
+#billingState,
+#billingZip,
+#billingCountry,
+#billingPhone,
+#billingEmail {
+  grid-column: span 1;
+}
+
+#billingAddress1 {
+  grid-column: span 2;
+}
+
+#billingEmail {
+  grid-column: span 2;
+}
+
+.panelActions {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 2px;
+  padding-top: 2px;
+}
+
+.flowBtn {
+  min-width: 104px;
+  height: 30px;
+  padding: 0 14px;
+  border: 1px solid #cf7d68;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #ff9c81, #cf7d68);
+  color: #1b0f0a;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.flowBtn-secondary {
+  border-color: #585858;
+  background: #292929;
+  color: #e8e8e8;
+}
+
+.flowBtn:hover {
+  filter: brightness(1.05);
+}
+
+.flowBtn:active {
+  transform: translateY(1px);
+}
+
+div#Transition {
+  width: 700px;
+  height: 400px;
+  position: absolute;
+
+  border-bottom: #fff solid 5px;
+
+  border-top: #fff solid 5px;
+
+  transition: top 1s ease;
+
+  background-color: #1e1e1e;
+  z-index: 89;
+}
+
+div#Transition[state="0"] {
+  top: -450px;
+  transition: none;
+}
+
+div#Transition[state="1"] {
+  top: -25px;
+}
+
+div#Transition[state="2"] {
+  top: 350px;
 }

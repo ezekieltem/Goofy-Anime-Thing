@@ -4,18 +4,24 @@ Small Electron desktop app that displays a goofy anime GIF, rotates title text f
 
 This project was developed by ezekieltem.
 
-[<img src="./README%20Assets/x-icon.png" alt="[x.com](https://x.com/ezekieltem_rbx)" width="30">](https://x.com/ezekieltem_rbx)[<img src="./README Assets/youtube-icon.png" alt="[youtube.com](https://x.com/ezekieltem_rbx)" width="30">](https://www.youtube.com/@ezekieltem)[<img src="./README Assets/github-icon.png" alt="[github.com](https://github.com/ezekieltem/Goofy-Anime-Thing)" width="30">](https://github.com/ezekieltem/Goofy-Anime-Thing)[<img src="./README Assets/discord-icon.png" alt="[discord.com](https://ezekieltem.com/discord/)" width="30">](https://ezekieltem.com/discord/)[<img src="https://ezekieltem.com/Assets/icon.png" alt="My website" width="30">](https://ezekieltem.com/)
+[<img src="./README%20Assets/x-icon.png" alt="[x.com](https://x.com/ezekieltem_rbx)" width="30">](https://x.com/ezekieltem_rbx)[<img src="./README Assets/youtube-icon.png" alt="[youtube.com](https://x.com/ezekieltem_rbx)" width="30">](https://www.youtube.com/@ezekieltem)[<img src="./README Assets/github-icon.png" alt="[github.com](https://github.com/)" width="30">](https://github.com/ezekieltem/)[<img src="./README Assets/discord-icon.png" alt="[discord.com](https://ezekieltem.com/discord/)" width="30">](https://ezekieltem.com/discord)[<img src="https://ezekieltem.com/Assets/icon.png" alt="My website" width="30">](https://ezekieltem.com/)
 
 ## Table of Contents
 
-- [About](#about)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Locally Build](#locally-build)
-- [Packaging](#packaging)
-- [License](#license)
-- [Disclaimer](#disclaimer)
+- [Totally Not Anime Malware](#totally-not-anime-malware)
+  - [Table of Contents](#table-of-contents)
+  - [About](#about)
+  - [Features](#features)
+  - [Tech Stack](#tech-stack)
+  - [Project Structure](#project-structure)
+  - [Locally Build](#locally-build)
+    - [Requirements](#requirements)
+    - [Clone the repository](#clone-the-repository)
+    - [Install dependencies](#install-dependencies)
+    - [Start the app in development](#start-the-app-in-development)
+  - [Packaging](#packaging)
+  - [License](#license)
+  - [Disclaimer](#disclaimer)
 
 ## About
 
@@ -27,7 +33,7 @@ This is a joke desktop app built around a single animated asset and some intenti
 
 - Frameless Electron window with custom drag, minimize, and close controls
 - Local asset loading through the webpack renderer bundle
-- Randomized window title text from `src/Assets/map.json`
+- Randomized window title text from `src/Assets/map.jsonc`
 - Fixed-size `300x300` image rendering
 - No account system, no updater, and no backend service
 
@@ -45,7 +51,7 @@ src/
   Assets/
     Gif/
     Img/
-    map.json
+    map.jsonc
   assets.js
   index.css
   index.html
