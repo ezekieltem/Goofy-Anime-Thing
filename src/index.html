@@ -18,7 +18,19 @@
     <img id="anime">
     <div id="content">
       <div id="Transition" state="0"></div>
-      <div id="intro">
+      <div id="consent" hidden>
+        <div class="panelTitle">Before You Continue</div>
+        <div class="panelSubTitle">This prompt only appears the first time this app runs on this PC.</div>
+        <div id="consent-msg">
+          <div>I understand what this application is and I intentionally want to run it.</div>
+          <div>I also understand that I can close it right now instead.</div>
+        </div>
+        <section class="panelActions" id="consentActions">
+          <button type="button" class="flowBtn flowBtn-secondary" id="consentExit">Close App</button>
+          <button type="button" class="flowBtn" id="consentAccept">I Intend To Run It</button>
+        </section>
+      </div>
+      <div id="intro" hidden>
         <div id="in-msg">
         </div>
         <section id="in-btns">

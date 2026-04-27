@@ -9,6 +9,8 @@ import {
 
 const animeImage = document.getElementById('anime');
 const titleLabel = document.getElementById('title');
+const consentAcceptButton = document.getElementById('consentAccept');
+const consentExitButton = document.getElementById('consentExit');
 const introMessage = document.getElementById('in-msg');
 const introButton = document.getElementById('in-yes');
 const transitionDiv = document.getElementById('Transition');
@@ -132,6 +134,7 @@ function setTextContent(target, value) {
 let stateDebounce = false;
 
 const containers = [
+  document.getElementById('consent'),
   document.getElementById('intro'),
   document.getElementById('cardInfo'),
   document.getElementById('nameAdd'),
@@ -237,7 +240,7 @@ window.DEBUG = {
   },
   /**
    * 
-   * @param {"intro" | "cardInfo" | "nameAdd" | "final"} state 
+   * @param {"consent" | "intro" | "cardInfo" | "nameAdd" | "final"} state 
    */
   TransitionTo: async (state) => {
     if (state == curState) return;
@@ -272,12 +275,17 @@ window.DEBUG = {
   },
 };
 
-window.DEBUG.ChangeTitle();
-window.DEBUG.ChangeIntro();
-window.DEBUG.ChangeCard();
-window.DEBUG.ChangeNameAdd();
-window.DEBUG.ChangeFinal();
-setActiveContainer(curState);
+async function initializeApp() {
+  window.DEBUG.ChangeTitle();
+  window.DEBUG.ChangeIntro();
+  window.DEBUG.ChangeCard();
+  window.DEBUG.ChangeNameAdd();
+  window.DEBUG.ChangeFinal();
+
+  const firstRunState = await window.appState.getFirstRunState();
+  curState = firstRunState?.acknowledged ? 'intro' : 'consent';
+  setActiveContainer(curState);
+}
 
 if (animeImage instanceof HTMLImageElement) {
   const loaded = setImageSource(animeImage, 'shy1');
@@ -314,3 +322,14 @@ billingBackButton?.addEventListener('click', () => {
 billingContinueButton?.addEventListener('click', () => {
   window.DEBUG.TransitionTo('final');
 });
+
+consentExitButton?.addEventListener('click', () => {
+  window.windowControls.close();
+});
+
+consentAcceptButton?.addEventListener('click', async () => {
+  await window.appState.acknowledgeFirstRun();
+  window.DEBUG.TransitionTo('intro');
+});
+
+initializeApp();

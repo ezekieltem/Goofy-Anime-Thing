@@ -120,6 +120,7 @@ input[type=number] {
 }
 
 #intro,
+#consent,
 #cardInfo,
 #nameAdd,
 #final {
@@ -179,6 +180,32 @@ input[type=button] {
     linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0)),
     #171717;
   border-radius: 10px;
+}
+
+#consent {
+  box-sizing: border-box;
+  padding: 16px 14px 12px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  align-content: start;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0)),
+    #171717;
+  border-radius: 10px;
+}
+
+#consent-msg {
+  display: grid;
+  gap: 8px;
+  color: #d7d7d7;
+  line-height: 1.35;
+}
+
+#consent-msg div {
+  position: static;
+  width: auto;
+  height: auto;
 }
 
 #final {
